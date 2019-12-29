@@ -1,20 +1,14 @@
-#include <iostream>
+#include "test.h"
 
-class elephant
+elephant::elephant(int Getage,bool Getsex)
 {
-private:
-	flont size;
-	int age;
-	bool sex;
-public:
-	void getSize();
-	elephant(age,sex);
-	//TODO:interface
+	age = Getage;
+	sex = Getsex;
+	cout << "class : elephant has been created in "
+	<< this;
 }
 
-int main()
+void elephant::getSize()
 {
-	cout << "hello world!";
-	return 0;
-
+	cout << "Size is " << size;
 }
